@@ -31,19 +31,99 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-/* ol, ul {
-	list-style: none;
+
+/* focus styles */
+
+:focus {
+	outline: 0;
+	}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    max-width: 100%;
+    border: 1px solid black;   
+    /* remove the border when done with styling!!! */
 }
-blockquote, q {
-	quotes: none;
+
+/* general styles copied */
+
+html{
+    font-size: 62.5%;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: 'Roboto Mono', monospace;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
+
+a{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+h1{
+    font-size: 10rem;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+}
+
+section{
+    pad: 4% 0;
+}
+
+/* header styles */
+
+header{
+    background-color:blueviolet;
+    
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+nav{
+    padding:4% 0;
+}
+nav a{
+    display: inline-block;
+    padding: .5% 0;
+    width:8%;
+    font-size: 2rem;
+    color: crimson;
+    text-align: center;
+    background-color: darkgoldenrod;
+    margin-left: 6%;
+}
+nav a:hover{
+    background-color: turquoise;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
