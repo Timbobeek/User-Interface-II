@@ -102,6 +102,7 @@ nav a{
     text-align: center;
     background-color: darkgoldenrod;
     margin-left: 6%;
+    border:2px solid #266035;
 }
 nav a:hover{
     background-color: turquoise;
@@ -115,6 +116,36 @@ nav a:hover{
     margin-top: 3%;
     margin-left: 8%;
 }
+
+.right{
+    width:30%;
+    margin-left:55%;
+    position: absolute;
+    top:50%;
+    font-size: 2rem;
+}
+
+.right h2{
+    margin-bottom: 1%;
+}
+
+.right button{
+    background-color: blueviolet;
+    border:2px solid #266035;
+    width: 30%;
+    padding: 4%;
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.right button:hover{
+    background-color: turquoise;
+    color: white;
+}
+
+/* section2 */
+
+
 
 
 
