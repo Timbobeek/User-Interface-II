@@ -68,7 +68,7 @@ a {
 h1 {
   font-size: 10rem;
   font-family: "Chelsea Market", cursive;
-  color: white;
+  color: cornsilk;
 }
 
 section {
@@ -117,7 +117,7 @@ nav a:hover {
 /* section1 */
 
 .section1 {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
 }
@@ -132,6 +132,7 @@ nav a:hover {
 
 .right {
   width: 50%;
+  margin-top: 10%;
   font-size: 2rem;
   padding: 3%;
   display: flex;
@@ -139,6 +140,7 @@ nav a:hover {
 }
 
 .right h2 {
+  font-size: 2em;
   margin-bottom: 1%;
 }
 
@@ -148,7 +150,7 @@ nav a:hover {
   text-align: center;
   width: 50%;
   padding: 4%;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Roboto Mono", monospace;
   margin-top: 1em;
 }
@@ -159,7 +161,7 @@ nav a:hover {
 }
 
 .right p {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 /* section2 */
@@ -196,26 +198,38 @@ nav a:hover {
 /* footer */
 
 footer {
+  padding-top: 4%;
   background-color: #6d6875;
-  padding: 6%;
-  text-align: center;
-  color: cornsilk;
-  font-size: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-footer a {
+footer .contact {
+  /* padding-bottom: 6%; */
+  text-align: center;
+  color: cornsilk;
+  font-size: 4rem;
+  padding-bottom: 2em;
+}
+
+footer .contact a {
   color: #6d6875;
   background-color: #ffb4a2;
   width: 15%;
   margin-top: 1em;
   font-size: 3rem;
   text-align: center;
+  padding: 0.3em;
 }
 
-footer a:hover {
+footer .contact a:hover {
   background-color: #ffcdb2;
   color: black;
 }
+
+footer img {
+  width: 1em;
+}
+
+
