@@ -1,1 +1,235 @@
-/* Add CSS styling here */
+/*
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+
+/* focus styles */
+
+:focus {
+  outline: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* general styles copied */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #4f4f4f;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: "Chelsea Market", cursive;
+  color: cornsilk;
+}
+
+section {
+  pad: 4% 0;
+}
+
+/* header styles */
+
+.navigation {
+  background-color: #6d6875;
+}
+
+.navigation h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-left: 4%;
+  padding-top: 2%;
+  border: 0;
+}
+
+nav {
+  padding: 2% 0;
+  margin-top: 0.1%;
+  margin-left: 6%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5% 0;
+  width: 5em;
+  min-width: 5em;
+  font-size: 3rem;
+  color: #6d6875;
+  text-align: center;
+  background-color: #ffb4a2;
+  border: 2px solid #6d6875;
+}
+nav a:hover {
+  background-color: #ffcdb2;
+  color: black;
+}
+
+/* section1 */
+
+.section1 {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+}
+
+.left img {
+  padding: 10%;
+}
+
+.right {
+  width: 50%;
+  margin-top: 10%;
+  font-size: 2rem;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right h2 {
+  font-size: 2em;
+  margin-bottom: 1%;
+}
+
+.right a.button {
+  background-color: #ffb4a2;
+  color: #6d6875;
+  text-align: center;
+  width: 50%;
+  padding: 4%;
+  font-size: 3rem;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 1em;
+}
+
+.right a.button:hover {
+  background-color: #ffcdb2;
+  color: black;
+}
+
+.right p {
+  margin-top: 2em;
+}
+
+/* section2 */
+
+.section2 {
+  margin: 1em 0 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section2 .project {
+  width: 25%;
+  padding: 1em;
+}
+
+.project .image {
+  height: 180px;
+  overflow: hidden;
+  max-width: 100%;
+  display: block;
+}
+
+.project .text {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.project .text h3 {
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* footer */
+
+footer {
+  padding-top: 4%;
+  background-color: #6d6875;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .contact {
+  /* padding-bottom: 6%; */
+  text-align: center;
+  color: cornsilk;
+  font-size: 4rem;
+  padding-bottom: 2em;
+}
+
+footer .contact a {
+  color: #6d6875;
+  background-color: #ffb4a2;
+  width: 15%;
+  margin-top: 1em;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.3em;
+}
+
+footer .contact a:hover {
+  background-color: #ffcdb2;
+  color: black;
+}
+
+footer img {
+  width: 1em;
+}
+
+
