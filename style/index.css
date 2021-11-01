@@ -237,13 +237,28 @@ footer img {
 /* for tablet */
 
 @media (max-width: 800px){
-
+  .section1{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left{
+    width: 100%;
+    
+  }
+  .right{
+    width: 100%;
+    margin-top: 1%;
+  }
 }
+
+
+
+
 
 
 
 /* for mobile */
 
-@media (max-width: 500px){
+/* @media (max-width: 500px){
   
-}
+} */
