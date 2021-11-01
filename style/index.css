@@ -139,12 +139,12 @@ nav a:hover {
   flex-direction: column;
 }
 
-.right h2 {
+.right .rightName h2 {
   font-size: 2em;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 }
 
-.right a.button {
+.right .rightButton a.button{
   background-color: #ffb4a2;
   color: #6d6875;
   text-align: center;
@@ -155,12 +155,12 @@ nav a:hover {
   margin-top: 1em;
 }
 
-.right a.button:hover {
+.right .rightButton a.button:hover {
   background-color: #ffcdb2;
   color: black;
 }
 
-.right p {
+.right .rightText p {
   margin-top: 2em;
 }
 
@@ -232,14 +232,37 @@ footer img {
   width: 1em;
 }
 
-/* media queries */
+/* ----------------media queries---------------- */
 
-/* for tablet */
+/* --------for tablet---------- */
 
-@media (max-width: 800px){
+@media (max-width: 800px){  
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  nav {
+    margin-left: 0%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  nav a{
+    min-width: 10%;
+    font-size: 3rem;
+    border: 2px solid #6d6875;
+  }
+
+  
   .section1{
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    
   }
   .left{
     width: 100%;
@@ -251,14 +274,15 @@ footer img {
   }
 }
 
+/* --------------for mobile----------------- */
 
-
-
-
-
-
-/* for mobile */
-
-/* @media (max-width: 500px){
-  
-} */
+ @media (max-width: 500px){
+    
+  .navigation h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 4%;
+    padding-top: 2%;
+    border: 0;
+   }
+  }
