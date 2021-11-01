@@ -232,4 +232,18 @@ footer img {
   width: 1em;
 }
 
+/* media queries */
 
+/* for tablet */
+
+@media (max-width: 800px){
+
+}
+
+
+
+/* for mobile */
+
+@media (max-width: 500px){
+  
+}
