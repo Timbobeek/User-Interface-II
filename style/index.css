@@ -244,19 +244,28 @@ footer img {
     flex-direction: column;
   }
 
+  .navigation .navName {
+    text-align: center;
+  }
 
-  nav {
+  .navigation .navName h1{
+    margin-left: 0%;
+  }
+
+   .navigation .navNavi nav {
     margin-left: 0%;
     flex-direction: column;
-    align-items: center;
-
   }
   
-  nav a{
-    min-width: 10%;
-    font-size: 3rem;
-    border: 2px solid #6d6875;
-  }
+
+
+
+
+
+
+
+
+
 
   
   .section1{
