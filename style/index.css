@@ -120,6 +120,7 @@ nav a:hover {
   margin-top: 2%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .left {
@@ -127,14 +128,14 @@ nav a:hover {
 }
 
 .left img {
-  padding: 10%;
+  padding: 1em;
 }
 
 .right {
   width: 50%;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   font-size: 2rem;
-  padding: 3%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -176,6 +177,10 @@ nav a:hover {
 .section2 .project {
   width: 25%;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .project .image {
@@ -183,6 +188,11 @@ nav a:hover {
   overflow: hidden;
   max-width: 100%;
   display: block;
+}
+
+.project .image img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .project .text {
@@ -206,11 +216,10 @@ footer {
 }
 
 footer .contact {
-  /* padding-bottom: 6%; */
   text-align: center;
   color: cornsilk;
   font-size: 4rem;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 
 footer .contact a {
@@ -221,6 +230,15 @@ footer .contact a {
   font-size: 3rem;
   text-align: center;
   padding: 0.3em;
+}
+
+footer .social {
+  padding-bottom: 1em;
+}
+
+footer .social a {
+  background-color: transparent;
+  font-size: 3rem;
 }
 
 footer .contact a:hover {
@@ -257,17 +275,6 @@ footer img {
     flex-direction: column;
   }
   
-
-
-
-
-
-
-
-
-
-
-  
   .section1{
     flex-direction: column;
     text-align: center;
@@ -275,7 +282,6 @@ footer img {
   }
   .left{
     width: 100%;
-    
   }
   .right{
     width: 100%;
@@ -294,4 +300,10 @@ footer img {
     padding-top: 2%;
     border: 0;
    }
+  
+  .section2 .project {
+    width: 50%;
+    padding: 1em;
   }
+
+}
