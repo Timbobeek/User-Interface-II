@@ -104,14 +104,15 @@ nav a {
   width: 5em;
   min-width: 5em;
   font-size: 3rem;
-  color: #6d6875;
+  color: black;
   text-align: center;
   background-color: #ffb4a2;
   border: 2px solid #6d6875;
 }
+
 nav a:hover {
   background-color: #ffcdb2;
-  color: black;
+  font-weight: bold;
 }
 
 /* section1 */
@@ -120,6 +121,7 @@ nav a:hover {
   margin-top: 2%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .left {
@@ -127,26 +129,25 @@ nav a:hover {
 }
 
 .left img {
-  padding: 10%;
+  padding: 1em;
 }
 
 .right {
   width: 50%;
-  margin-top: 10%;
   font-size: 2rem;
-  padding: 3%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
 }
 
-.right h2 {
+.right .title h2 {
   font-size: 2em;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 }
 
-.right a.button {
+.right .button a {
   background-color: #ffb4a2;
-  color: #6d6875;
+  color: black;
   text-align: center;
   width: 50%;
   padding: 4%;
@@ -155,12 +156,12 @@ nav a:hover {
   margin-top: 1em;
 }
 
-.right a.button:hover {
+.right .button a:hover {
   background-color: #ffcdb2;
-  color: black;
+  font-weight: bold;
 }
 
-.right p {
+.right .text p {
   margin-top: 2em;
 }
 
@@ -176,6 +177,10 @@ nav a:hover {
 .section2 .project {
   width: 25%;
   padding: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .project .image {
@@ -183,6 +188,11 @@ nav a:hover {
   overflow: hidden;
   max-width: 100%;
   display: block;
+}
+
+.project .image img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .project .text {
@@ -206,15 +216,14 @@ footer {
 }
 
 footer .contact {
-  /* padding-bottom: 6%; */
   text-align: center;
   color: cornsilk;
   font-size: 4rem;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 
 footer .contact a {
-  color: #6d6875;
+  color: black;
   background-color: #ffb4a2;
   width: 15%;
   margin-top: 1em;
@@ -223,13 +232,77 @@ footer .contact a {
   padding: 0.3em;
 }
 
+footer .social {
+  padding-bottom: 1em;
+}
+
+footer .social a {
+  background-color: transparent;
+  font-size: 3rem;
+}
+
 footer .contact a:hover {
   background-color: #ffcdb2;
-  color: black;
+  font-weight: bold;
 }
 
 footer img {
   width: 1em;
 }
 
+/* ----------------media queries---------------- */
 
+/* --------for tablet---------- */
+
+@media (max-width: 800px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navigation .name {
+    text-align: center;
+  }
+
+  .navigation .name h1 {
+    margin-left: 0%;
+  }
+
+  .navigation nav.links {
+    margin-left: 0%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 1%;
+  }
+}
+
+/* --------------for mobile----------------- */
+
+@media (max-width: 500px) {
+  .navigation h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 4%;
+    padding-top: 2%;
+    border: 0;
+  }
+
+  .section2 .project {
+    width: 50%;
+    padding: 1em;
+  }
+}
