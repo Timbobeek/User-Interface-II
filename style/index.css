@@ -109,6 +109,7 @@ nav a {
   background-color: #ffb4a2;
   border: 2px solid #6d6875;
 }
+
 nav a:hover {
   background-color: #ffcdb2;
   color: black;
@@ -133,19 +134,18 @@ nav a:hover {
 
 .right {
   width: 50%;
-  /* margin-top: 10%; */
   font-size: 2rem;
   padding: 1em;
   display: flex;
   flex-direction: column;
 }
 
-.right .rightName h2 {
+.right .title h2 {
   font-size: 2em;
   margin-bottom: 4%;
 }
 
-.right .rightButton a.button{
+.right .button a {
   background-color: #ffb4a2;
   color: #6d6875;
   text-align: center;
@@ -156,12 +156,12 @@ nav a:hover {
   margin-top: 1em;
 }
 
-.right .rightButton a.button:hover {
+.right .button a:hover {
   background-color: #ffcdb2;
   color: black;
 }
 
-.right .rightText p {
+.right .text p {
   margin-top: 2em;
 }
 
@@ -254,36 +254,37 @@ footer img {
 
 /* --------for tablet---------- */
 
-@media (max-width: 800px){  
-  
+@media (max-width: 800px) {
   .navigation {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .navigation .navName {
+  .navigation .name {
     text-align: center;
   }
 
-  .navigation .navName h1{
+  .navigation .name h1 {
     margin-left: 0%;
   }
 
-   .navigation .navNavi nav {
+  .navigation nav.links {
     margin-left: 0%;
     flex-direction: column;
+    align-items: center;
   }
-  
-  .section1{
+
+  .section1 {
     flex-direction: column;
     text-align: center;
-    
   }
-  .left{
+
+  .left {
     width: 100%;
   }
-  .right{
+
+  .right {
     width: 100%;
     margin-top: 1%;
   }
@@ -291,19 +292,17 @@ footer img {
 
 /* --------------for mobile----------------- */
 
- @media (max-width: 500px){
-    
+@media (max-width: 500px) {
   .navigation h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-left: 4%;
     padding-top: 2%;
     border: 0;
-   }
-  
+  }
+
   .section2 .project {
     width: 50%;
     padding: 1em;
   }
-
 }
