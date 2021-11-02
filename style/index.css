@@ -104,7 +104,7 @@ nav a {
   width: 5em;
   min-width: 5em;
   font-size: 3rem;
-  color: #6d6875;
+  color: black;
   text-align: center;
   background-color: #ffb4a2;
   border: 2px solid #6d6875;
@@ -112,7 +112,7 @@ nav a {
 
 nav a:hover {
   background-color: #ffcdb2;
-  color: black;
+  font-weight: bold;
 }
 
 /* section1 */
@@ -147,7 +147,7 @@ nav a:hover {
 
 .right .button a {
   background-color: #ffb4a2;
-  color: #6d6875;
+  color: black;
   text-align: center;
   width: 50%;
   padding: 4%;
@@ -158,7 +158,7 @@ nav a:hover {
 
 .right .button a:hover {
   background-color: #ffcdb2;
-  color: black;
+  font-weight: bold;
 }
 
 .right .text p {
@@ -223,7 +223,7 @@ footer .contact {
 }
 
 footer .contact a {
-  color: #6d6875;
+  color: black;
   background-color: #ffb4a2;
   width: 15%;
   margin-top: 1em;
@@ -243,7 +243,7 @@ footer .social a {
 
 footer .contact a:hover {
   background-color: #ffcdb2;
-  color: black;
+  font-weight: bold;
 }
 
 footer img {
